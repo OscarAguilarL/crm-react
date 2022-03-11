@@ -1,5 +1,5 @@
 import React from 'react';
-import { Outlet } from 'react-router-dom';
+import { Link, Outlet } from 'react-router-dom';
 
 export const Layout = () => {
   return (
@@ -10,18 +10,18 @@ export const Layout = () => {
         </h2>
 
         <nav className="mt-10">
-          <a
-            href="/clientes"
+          <Link
+            to="/clientes"
             className="text-white text-2xl block mt-2 hover:text-blue-300"
           >
             Clientes
-          </a>
-          <a
-            href="/clientes/nuevo"
+          </Link>
+          <Link
+            to="/clientes/nuevo"
             className="text-white text-2xl block mt-2 hover:text-blue-300"
           >
             Nuevo Cliente
-          </a>
+          </Link>
         </nav>
       </div>
 
